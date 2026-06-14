@@ -15,7 +15,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("ViewLayer")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+379634cfd2dceceb083b8505d3f88e99c93192ab")]
 [assembly: System.Reflection.AssemblyProductAttribute("ViewLayer")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ViewLayer")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

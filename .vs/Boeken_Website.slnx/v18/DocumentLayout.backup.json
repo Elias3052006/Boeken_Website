@@ -1,7 +1,12 @@
 {
   "Version": 1,
   "WorkspaceRootPath": "C:\\Users\\EGCor\\Documents\\GitHub\\Boeken_Website\\",
-  "Documents": [],
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{9CB534FC-FA13-43D8-598D-691F69E429A1}|ViewLayer\\ViewLayer.csproj|c:\\users\\egcor\\documents\\github\\boeken_website\\viewlayer\\viewlayer.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{9CB534FC-FA13-43D8-598D-691F69E429A1}|ViewLayer\\ViewLayer.csproj|solutionrelative:viewlayer\\viewlayer.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    }
+  ],
   "DocumentGroupContainers": [
     {
       "Orientation": 1,
@@ -23,11 +28,24 @@
         },
         {
           "DockedHeight": 200,
-          "SelectedChildIndex": -1,
+          "SelectedChildIndex": 0,
           "Children": [
             {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "ViewLayer.csproj",
+              "DocumentMoniker": "C:\\Users\\EGCor\\Documents\\GitHub\\Boeken_Website\\ViewLayer\\ViewLayer.csproj",
+              "RelativeDocumentMoniker": "ViewLayer\\ViewLayer.csproj",
+              "ToolTip": "C:\\Users\\EGCor\\Documents\\GitHub\\Boeken_Website\\ViewLayer\\ViewLayer.csproj",
+              "RelativeToolTip": "ViewLayer\\ViewLayer.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2026-06-14T13:59:07.542Z",
+              "EditorCaption": ""
+            },
+            {
               "$type": "Bookmark",
-              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
             }
           ]
         }

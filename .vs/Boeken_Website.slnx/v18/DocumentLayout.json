@@ -33,7 +33,7 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "ViewLayer",
+              "Title": "ViewLayer.csproj",
               "DocumentMoniker": "C:\\Users\\EGCor\\Documents\\GitHub\\Boeken_Website\\ViewLayer\\ViewLayer.csproj",
               "RelativeDocumentMoniker": "ViewLayer\\ViewLayer.csproj",
               "ToolTip": "C:\\Users\\EGCor\\Documents\\GitHub\\Boeken_Website\\ViewLayer\\ViewLayer.csproj",
@@ -42,10 +42,6 @@
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
               "WhenOpened": "2026-06-14T13:59:07.542Z",
               "EditorCaption": ""
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
             }
           ]
         }
