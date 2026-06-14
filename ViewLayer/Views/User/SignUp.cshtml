@@ -1,0 +1,61 @@
+﻿@model ViewLayer.Models.SignUpViewModel
+
+@{
+    ViewData["Title"] = "Aanmelden";
+}
+
+<div class="signup-wrapper">
+    <div class="signup-card">
+        <h2 class="signup-title">Account aanmaken</h2>
+        <p class="signup-subtitle">Vul je gegevens in om te registreren</p>
+
+        <form asp-controller="SignUp" asp-action="SignUp" method="post">
+            @Html.AntiForgeryToken()
+
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+
+            <div class="form-group">
+                <label asp-for="Username">Gebruikersnaam</label>
+                <input asp-for="Username" class="form-control" placeholder="Kies een gebruikersnaam" />
+                <span asp-validation-for="Username" class="text-danger"></span>
+            </div>
+
+            <div class="form-group">
+                <label asp-for="Password">Wachtwoord</label>
+                <input asp-for="Password" class="form-control" type="password" placeholder="Kies een wachtwoord" />
+                <span asp-validation-for="Password" class="text-danger"></span>
+            </div>
+
+            <div class="form-group">
+                <label asp-for="Email">E-mailadres</label>
+                <input asp-for="Email" class="form-control" placeholder="jouw@email.nl" />
+                <span asp-validation-for="Email" class="text-danger"></span>
+            </div>
+
+            <div class="form-row">
+                <div class="form-group col-7">
+                    <label asp-for="PostCode">Postcode</label>
+                    <input asp-for="PostCode" class="form-control" placeholder="1234 AB" />
+                    <span asp-validation-for="PostCode" class="text-danger"></span>
+                </div>
+                <div class="form-group col-5">
+                    <label asp-for="HouseNumber">Huisnummer</label>
+                    <input asp-for="HouseNumber" class="form-control" placeholder="12" type="number" />
+                    <span asp-validation-for="HouseNumber" class="text-danger"></span>
+                </div>
+            </div>
+
+            <button type="submit" class="btn-submit">Aanmelden</button>
+
+            <p class="signup-login-link">
+                Al een account? <a asp-controller="Login" asp-action="Login">Inloggen</a>
+            </p>
+        </form>
+    </div>
+</div>
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}

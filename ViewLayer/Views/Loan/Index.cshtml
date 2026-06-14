@@ -1,0 +1,44 @@
+﻿@model IEnumerable<BisinessLogicLayer.Domain.Loan>
+
+@{
+    ViewData["Title"] = "Mijn Leningen";
+}
+
+<div class="container">
+    <h2>Mijn Leningen</h2>
+
+    @if (!Model.Any())
+    {
+        <div class="alert alert-info">
+            Je hebt momenteel geen actieve leningen.
+        </div>
+    }
+    else
+    {
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th>Boek ID</th>
+                    <th>Uitleendatum</th>
+                    <th>Inleverdatum</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var loan in Model)
+                {
+                    <tr>
+                        <td>@loan.BookId</td>
+                        <td>@loan.LoanDate.ToShortDateString()</td>
+                        <td>@loan.ReturnDate.ToShortDateString()</td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    }
+
+    <hr />
+
+    <h3>Nieuw boek lenen?</h3>
+    <p>Ga naar de boekenlijst om een boek te kiezen.</p>
+    <a asp-controller="Book" asp-action="Index" class="btn btn-primary">Bekijk boeken</a>
+</div>

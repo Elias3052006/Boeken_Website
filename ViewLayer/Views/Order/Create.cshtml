@@ -1,0 +1,59 @@
+﻿@model ViewLayer.Models.OrderViewModel
+
+@{
+    ViewData["Title"] = "Bestelling plaatsen";
+}
+
+<div class="signup-wrapper">
+    <div class="signup-card" style="max-width: 650px;">
+        <h2 class="signup-title">Bestelling plaatsen</h2>
+        <p class="signup-subtitle">Kies de boeken die je wil bestellen</p>
+
+        <form asp-controller="Order" asp-action="Create" method="post">
+            @Html.AntiForgeryToken()
+            <input type="hidden" asp-for="UserId" />
+
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+
+            @if (Model.Books != null && Model.Books.Any())
+            {
+                @for (int i = 0; i < Model.Books.Count; i++)
+                {
+                    <div class="order-book-item" style="display: flex; align-items: center; justify-content: space-between; margin-bottom: 15px; border-bottom: 1px solid #eee; padding-bottom: 10px;">
+
+                        <input type="hidden" asp-for="Books[i].BookId" />
+                        <input type="hidden" asp-for="Books[i].Title" />
+                        <input type="hidden" asp-for="Books[i].Price" />
+
+                        <div class="order-book-info" style="display: flex; align-items: center; gap: 10px;">
+                            <input type="checkbox" asp-for="Books[i].IsSelected" class="order-checkbox" />
+                            <span class="book-title"><strong>@Model.Books[i].Title</strong></span>
+                            <span class="book-price">€@Model.Books[i].Price</span>
+                        </div>
+
+                        <div class="form-group order-quantity" style="display: flex; align-items: center; gap: 10px;">
+                            <label>Aantal</label>
+                            <input asp-for="Books[i].Quantity" type="number" min="0" value="@(Model.Books[i].Quantity > 0 ? Model.Books[i].Quantity : 1)" class="form-control" style="width: 80px;" />
+                        </div>
+                    </div>
+                }
+            }
+            else
+            {
+                <p>Geen boeken beschikbaar om te bestellen.</p>
+            }
+
+            <button type="submit" class="btn-submit" style="width: 100%; margin-top: 20px;">Bestelling plaatsen</button>
+
+            <p class="signup-login-link" style="text-align: center; margin-top: 15px;">
+                <a asp-controller="Home" asp-action="Index">Terug naar home</a>
+            </p>
+        </form>
+    </div>
+</div>
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}

@@ -1,0 +1,35 @@
+﻿@model ViewLayer.Models.CategoryViewModel
+
+@{
+    ViewData["Title"] = "Categorie toevoegen";
+}
+
+<div class="signup-wrapper">
+    <div class="signup-card">
+        <h2 class="signup-title">Categorie toevoegen</h2>
+        <p class="signup-subtitle">Vul een naam in voor de nieuwe categorie</p>
+
+        <form asp-controller="Category" asp-action="Create" method="post">
+            @Html.AntiForgeryToken()
+
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+
+            <div class="form-group">
+                <label asp-for="CategoryName">Naam</label>
+                <input asp-for="CategoryName" class="form-control" placeholder="Naam van de categorie" />
+            </div>
+
+            <button type="submit" class="btn-submit">Categorie toevoegen</button>
+
+            <p class="signup-login-link">
+                <a asp-controller="Home" asp-action="Index">Terug naar home</a>
+            </p>
+        </form>
+    </div>
+</div>
+
+@section Scripts {
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}

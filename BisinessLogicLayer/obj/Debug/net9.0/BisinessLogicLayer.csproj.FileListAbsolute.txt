@@ -1,0 +1,12 @@
+C:\Users\EGCor\Documents\GitHub\Boeken_Website\BisinessLogicLayer\bin\Debug\net9.0\BisinessLogicLayer.deps.json
+C:\Users\EGCor\Documents\GitHub\Boeken_Website\BisinessLogicLayer\bin\Debug\net9.0\BisinessLogicLayer.dll
+C:\Users\EGCor\Documents\GitHub\Boeken_Website\BisinessLogicLayer\bin\Debug\net9.0\BisinessLogicLayer.pdb
+C:\Users\EGCor\Documents\GitHub\Boeken_Website\BisinessLogicLayer\obj\Debug\net9.0\BisinessLogicLayer.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\EGCor\Documents\GitHub\Boeken_Website\BisinessLogicLayer\obj\Debug\net9.0\BisinessLogicLayer.AssemblyInfoInputs.cache
+C:\Users\EGCor\Documents\GitHub\Boeken_Website\BisinessLogicLayer\obj\Debug\net9.0\BisinessLogicLayer.AssemblyInfo.cs
+C:\Users\EGCor\Documents\GitHub\Boeken_Website\BisinessLogicLayer\obj\Debug\net9.0\BisinessLogicLayer.csproj.CoreCompileInputs.cache
+C:\Users\EGCor\Documents\GitHub\Boeken_Website\BisinessLogicLayer\obj\Debug\net9.0\BisinessLogicLayer.sourcelink.json
+C:\Users\EGCor\Documents\GitHub\Boeken_Website\BisinessLogicLayer\obj\Debug\net9.0\BisinessLogicLayer.dll
+C:\Users\EGCor\Documents\GitHub\Boeken_Website\BisinessLogicLayer\obj\Debug\net9.0\refint\BisinessLogicLayer.dll
+C:\Users\EGCor\Documents\GitHub\Boeken_Website\BisinessLogicLayer\obj\Debug\net9.0\BisinessLogicLayer.pdb
+C:\Users\EGCor\Documents\GitHub\Boeken_Website\BisinessLogicLayer\obj\Debug\net9.0\ref\BisinessLogicLayer.dll
